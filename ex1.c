@@ -7,11 +7,11 @@ Beatriz Nóbrega - 10435789
 #include <stdio.h>
 #include <string.h>
 
-// Função que compacta uma string, agrupando caracteres repetidos
+// Função de compactação da string
 void compactacao(const char *entrada, char *saida) {
     int i = 0, j = 0, count;
     
-    while (entrada[i] != '\0') { // Percorre a string até o final
+    while (entrada[i] != '\0') { // Percorre a string até o fim
         char atual = entrada[i];
         count = 1;
         
@@ -37,8 +37,8 @@ void compactacao(const char *entrada, char *saida) {
 }
 
 int main() {
-    char entrada[100]; // String de entrada fornecida pelo usuário
-    char saida[100];   // String de saída compactada
+    char entrada[100]; // String de entrada
+    char saida[100];   // String de saída
     
     // Solicita ao usuário que digite uma string
     printf("Digite a string a ser compactada: ");
